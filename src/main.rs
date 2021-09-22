@@ -10,7 +10,7 @@ struct Expression {
 }
 
 impl Expression {
-//This function evaluates the mathematical Expression
+//This function evaluates the mathematical Expression by first checking the sign and evaluating based on the sign
     fn eval(&self)->(i8,i32){
         if self.sign=='+' {
             (0,self.left_val+self.right_val)
